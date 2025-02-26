@@ -1,11 +1,11 @@
-# Food Delivery Website
+# Food Delivery Website 🍕
 
 A dynamic and responsive food delivery platform designed to enhance the customer experience. This project allows users to navigate menus seamlessly, customize their orders, make secure payments, and track their orders in real-time. Admin users can manage menus and orders efficiently via an intuitive admin panel.
 
-## Live Demo
+## Live Demo 🌐
 [Food Delivery Website](https://food-web-frontend-qxpl.onrender.com/)
 
-## Features
+## Features 🎯
 
 - **Intuitive User Interface**: Smooth navigation for menus and order customization.
 - **Secure Payment Processing**: Integrated with Stripe for safe and reliable transactions.
@@ -13,23 +13,23 @@ A dynamic and responsive food delivery platform designed to enhance the customer
 - **Admin Panel**: Manage menus and orders with ease.
 - **Responsive Design**: Optimized for both desktop and mobile devices.
 
-## Technologies Used
+## Technologies Used 💻
 
 - **Frontend**: React JS
 - **Backend**: Node.js, Express.js
 - **Database**: MongoDB
 - **Payment Gateway**: Stripe
 
-## Installation and Setup
+## Installation and Setup 🚀
 
 To set up the project locally, follow these steps:
 
-### Prerequisites
+### Prerequisites ✅
 - Node.js and npm installed on your system.
 - MongoDB instance running locally or a connection string for a cloud MongoDB database.
 - Stripe account for payment gateway integration.
 
-### Steps
+### Steps 📂
 
 1. **Clone the Repository**
 ```bash
@@ -76,33 +76,48 @@ npm start
 
 The application will be running at `http://localhost:3000`.
 
-## Folder Structure
+## Folder Structure 📁
 
 ```
 food-delivery-website/
-├── client/          # Frontend code (React JS)
-├── server/          # Backend code (Node.js, Express.js)
-├── models/          # Database models
-├── routes/          # API routes
-├── controllers/     # Request handlers
-├── utils/           # Utility functions
-└── README.md        # Project documentation
+├── admin/                # Admin panel code
+├── backend/              # Backend code
+│   ├── config/           # Configuration files
+│   ├── controllers/      # Request handlers
+│   ├── middleware/       # Custom middleware
+│   ├── models/           # Database models
+│   ├── routes/           # API routes
+│   ├── uploads/          # File uploads directory
+│   ├── .env              # Environment variables
+│   ├── package.json      # Backend dependencies
+│   └── server.js         # Entry point for the backend server
+│
+├── frontend/             # Frontend code
+│   ├── public/           # Static assets
+│   ├── src/              # React components and application logic
+│   ├── .eslintrc.cjs     # ESLint configuration
+│   ├── .gitignore        # Git ignore file
+│   ├── index.html        # Entry point for the frontend
+│   ├── package.json      # Frontend dependencies
+│   ├── vite.config.js    # Vite configuration
+│
+└── README.md             # Project documentation
 ```
 
-## Features Breakdown
+## Features Breakdown 🔍
 
-### User Features
-- Browse and search for menu items.
-- Customize orders with additional preferences.
-- Securely pay using Stripe.
-- Track orders in real-time.
+### User Features 🌟
+- 🍽️ Browse and search for menu items.
+- ✏️ Customize orders with additional preferences.
+- 💳 Securely pay using Stripe.
+- 📦 Track orders in real-time.
 
-### Admin Features
-- Add, edit, and delete menu items.
-- Manage customer orders efficiently.
-- View order status and update progress.
+### Admin Features 🛠️
+- ➕ Add, edit, and delete menu items.
+- 📋 Manage customer orders efficiently.
+- 🔄 Update order status in real-time.
 
-## Contributing
+## Contributing 🤝
 
 Contributions are welcome! If you'd like to contribute:
 - Fork the repository.
@@ -110,10 +125,7 @@ Contributions are welcome! If you'd like to contribute:
 - Commit your changes.
 - Submit a pull request.
 
-## License
-This project is licensed under the [MIT License](LICENSE).
-
-## Contact
+## Contact 📞
 For any inquiries or feedback, feel free to contact me:
 - **Email**: [97ravi2002@gmail.com](mailto:97ravi2002@gmail.com)
 - **LinkedIn**: [Ravi](https://www.linkedin.com/in/ravi-388a26280/)
