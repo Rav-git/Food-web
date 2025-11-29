@@ -27,7 +27,7 @@ const placeOrder = async (req, res) => {
                 product_data: {
                     name: item.name
                 },
-                unit_amount: item.price * 100 
+                unit_amount: item.price * 100
             },
             quantity: item.quantity
         }))
@@ -106,6 +106,15 @@ const updateStatus = async (req, res) => {
     console.log(req.body);
     try {
         await orderModel.findByIdAndUpdate(req.body.orderId, { status: req.body.status });
+
+        // Emit real-time update
+        if (req.io) {
+            req.io.emit('orderStatusUpdated', {
+                orderId: req.body.orderId,
+                status: req.body.status
+            });
+        }
+
         res.json({ success: true, message: "Status Updated" })
     } catch (error) {
         res.json({ success: false, message: "Error" })

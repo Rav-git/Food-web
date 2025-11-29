@@ -52,3 +52,21 @@
         font-size: 14px;
     }
 }
+.explore-menu-search {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.explore-menu-search input {
+    padding: 10px 20px;
+    width: 300px;
+    border: 1px solid #ccc;
+    border-radius: 50px;
+    font-size: 16px;
+    outline: none;
+}
+
+.explore-menu-search input:focus {
+    border-color: tomato;
+}
