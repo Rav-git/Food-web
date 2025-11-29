@@ -71,7 +71,7 @@ npm install
 
 8. **Start the Frontend Server**
 ```bash
-npm start
+npm run dev
 ```
 
 The application will be running at `http://localhost:3000`.
