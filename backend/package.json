@@ -6,7 +6,7 @@
   "main": "server.js",
   "scripts": {
     "server": "nodemon server.js",
-    "test": "set NODE_OPTIONS=--experimental-vm-modules && jest"
+    "test": "NODE_OPTIONS=--experimental-vm-modules jest"
   },
   "author": "",
   "license": "ISC",
