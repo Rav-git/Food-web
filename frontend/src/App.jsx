@@ -4,6 +4,9 @@ import Footer from './components/Footer/Footer'
 import Navbar from './components/Navbar/Navbar'
 import { Route, Routes } from 'react-router-dom'
 import Cart from './pages/Cart/Cart'
+import CancellationRefund from './pages/CancellationRefund/CancellationRefund'
+import ContactUs from './pages/ContactUs/ContactUs'
+import TermsConditions from './pages/TermsConditions/TermsConditions'
 import LoginPopup from './components/LoginPopup/LoginPopup'
 import PlaceOrder from './pages/PlaceOrder/PlaceOrder'
 import MyOrders from './pages/MyOrders/MyOrders'
@@ -27,6 +30,9 @@ const App = () => {
           <Route path='/order' element={<PlaceOrder />}/>
           <Route path='/myorders' element={<MyOrders />}/>
           <Route path='/verify' element={<Verify />}/>
+          <Route path='/cancellation-refund' element={<CancellationRefund />}/>
+<Route path='/contact' element={<ContactUs />}/>
+<Route path='/terms' element={<TermsConditions />}/>
         </Routes>
       </div>
       <Footer />
