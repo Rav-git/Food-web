@@ -47,50 +47,45 @@
   padding-left: 16px;
 }
 
-.contact-grid {
-  display: flex;
-  flex-direction: column;
-  gap: 0;
-}
-
-.contact-item {
-  display: flex;
-  gap: 16px;
-  padding: 18px 0;
-  border-bottom: 1px solid #f0f0f0;
-  align-items: flex-start;
-}
-
-.contact-item:last-child {
-  border-bottom: none;
-}
-
-.contact-label {
+.policy-section-title {
+  font-size: 1.1rem;
   font-weight: 600;
+  color: #1C1C1C;
+  margin: 28px 0 14px;
+  padding-bottom: 6px;
+  border-bottom: 2px solid #e8dfc0;
+}
+
+.policy-list {
+  padding-left: 0;
+  list-style: none;
+  margin: 0 0 8px;
+}
+
+.policy-list li {
+  position: relative;
+  padding: 12px 14px 12px 44px;
+  margin-bottom: 10px;
+  background: #faf8f0;
+  border-radius: 8px;
+  border: 1px solid #e8dfc0;
+  font-size: 0.95rem;
+  color: #444;
+}
+
+.policy-list li::before {
+  content: '•';
+  position: absolute;
+  left: 16px;
+  top: 12px;
   color: #C9A84C;
-  min-width: 220px;
-  font-size: 0.9rem;
-  flex-shrink: 0;
+  font-size: 1.3rem;
+  line-height: 1;
 }
 
-.contact-value {
-  color: #333;
-  font-size: 0.97rem;
-}
-
-.contact-value a {
-  color: #C9A84C;
-  text-decoration: none;
-  font-weight: 500;
-}
-
-.contact-value a:hover {
-  text-decoration: underline;
-}
+.policy-list li strong { color: #1C1C1C; }
 
 @media (max-width: 600px) {
   .policy-hero h1 { font-size: 1.6rem; }
   .policy-card { padding: 24px 18px; }
-  .contact-item { flex-direction: column; gap: 4px; }
-  .contact-label { min-width: unset; }
 }

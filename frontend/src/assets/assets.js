@@ -1,49 +1,6 @@
 import basket_icon from './basket_icon.png'
 import logo from './logo.png'
-import header_img from './header_img.png'
 import search_icon from './search_icon.png'
-import menu_1 from './menu_1.png'
-import menu_2 from './menu_2.png'
-import menu_3 from './menu_3.png'
-import menu_4 from './menu_4.png'
-import menu_5 from './menu_5.png'
-import menu_6 from './menu_6.png'
-import menu_7 from './menu_7.png'
-import menu_8 from './menu_8.png'
-
-import food_1 from './food_1.png'
-import food_2 from './food_2.png'
-import food_3 from './food_3.png'
-import food_4 from './food_4.png'
-import food_5 from './food_5.png'
-import food_6 from './food_6.png'
-import food_7 from './food_7.png'
-import food_8 from './food_8.png'
-import food_9 from './food_9.png'
-import food_10 from './food_10.png'
-import food_11 from './food_11.png'
-import food_12 from './food_12.png'
-import food_13 from './food_13.png'
-import food_14 from './food_14.png'
-import food_15 from './food_15.png'
-import food_16 from './food_16.png'
-import food_17 from './food_17.png'
-import food_18 from './food_18.png'
-import food_19 from './food_19.png'
-import food_20 from './food_20.png'
-import food_21 from './food_21.png'
-import food_22 from './food_22.png'
-import food_23 from './food_23.png'
-import food_24 from './food_24.png'
-import food_25 from './food_25.png'
-import food_26 from './food_26.png'
-import food_27 from './food_27.png'
-import food_28 from './food_28.png'
-import food_29 from './food_29.png'
-import food_30 from './food_30.png'
-import food_31 from './food_31.png'
-import food_32 from './food_32.png'
-
 import add_icon_white from './add_icon_white.png'
 import add_icon_green from './add_icon_green.png'
 import remove_icon_red from './remove_icon_red.png'
@@ -65,7 +22,6 @@ import un_checked from './un_checked.png'
 export const assets = {
     logo,
     basket_icon,
-    header_img,
     search_icon,
     rating_starts,
     add_icon_green,
@@ -86,269 +42,281 @@ export const assets = {
     un_checked
 }
 
+const UNS = (id, w = 400, h = 500) =>
+    `https://images.unsplash.com/photo-${id}?auto=format&fit=crop&w=${w}&h=${h}&q=80`
+
 export const menu_list = [
     {
-        menu_name: "Salad",
-        menu_image: menu_1
+        menu_name: "Men's Wear",
+        menu_image: UNS("1507679799987-c73779587ccf", 100, 100)
     },
     {
-        menu_name: "Rolls",
-        menu_image: menu_2
+        menu_name: "Women's Wear",
+        menu_image: UNS("1515886657613-9f3515b0c78f", 100, 100)
     },
     {
-        menu_name: "Deserts",
-        menu_image: menu_3
+        menu_name: "Kids' Collection",
+        menu_image: UNS("1622290291468-a28f7a7dc6a8", 100, 100)
     },
     {
-        menu_name: "Sandwich",
-        menu_image: menu_4
+        menu_name: "Footwear",
+        menu_image: UNS("1542291026-7eec264c27ff", 100, 100)
     },
     {
-        menu_name: "Cake",
-        menu_image: menu_5
+        menu_name: "Accessories",
+        menu_image: UNS("1523275335684-37898b6baf30", 100, 100)
     },
     {
-        menu_name: "Pure Veg",
-        menu_image: menu_6
-    },
-    {
-        menu_name: "Pasta",
-        menu_image: menu_7
-    },
-    {
-        menu_name: "Noodles",
-        menu_image: menu_8
-    }]
+        menu_name: "Ethnic Wear",
+        menu_image: UNS("1568702846914-96b305d2aaeb", 100, 100)
+    }
+]
 
 export const food_list = [
+    // ── Men's Wear ────────────────────────────────────────────────────────────
     {
         _id: "1",
-        name: "Greek salad",
-        image: food_1,
-        price: 12,
-        description: "Food provides essential nutrients for overall health and well-being",
-        category: "Salad"
+        name: "Classic Slim Fit Polo",
+        image: UNS("1521572163474-6864f9cf17ab"),
+        price: 899,
+        description: "Premium quality slim fit polo shirt in 100% breathable cotton. Perfect for smart-casual outings and everyday wear.",
+        category: "Men's Wear"
     },
     {
         _id: "2",
-        name: "Veg salad",
-        image: food_2,
-        price: 18,
-        description: "Food provides essential nutrients for overall health and well-being",
-        category: "Salad"
-    }, {
+        name: "Premium Cotton Jacket",
+        image: UNS("1551028719-00167b16eac5"),
+        price: 2499,
+        description: "Stylish cotton jacket with zip closure and multiple pockets. Modern cut suitable for all seasons.",
+        category: "Men's Wear"
+    },
+    {
         _id: "3",
-        name: "Clover Salad",
-        image: food_3,
-        price: 16,
-        description: "Food provides essential nutrients for overall health and well-being",
-        category: "Salad"
-    }, {
+        name: "Casual Slim Fit Chinos",
+        image: UNS("1624378439575-d8705ad7ae80"),
+        price: 1299,
+        description: "Classic slim fit chinos in high-quality stretch fabric. Versatile style from office to weekend outings.",
+        category: "Men's Wear"
+    },
+    {
         _id: "4",
-        name: "Chicken Salad",
-        image: food_4,
-        price: 24,
-        description: "Food provides essential nutrients for overall health and well-being",
-        category: "Salad"
-    }, {
+        name: "Graphic Print T-Shirt",
+        image: UNS("1576566588028-4147f3842f27"),
+        price: 699,
+        description: "Trendy graphic print round-neck t-shirt in pure combed cotton. Comfortable and stylish for everyday casual wear.",
+        category: "Men's Wear"
+    },
+    {
         _id: "5",
-        name: "Lasagna Rolls",
-        image: food_5,
-        price: 14,
-        description: "Food provides essential nutrients for overall health and well-being",
-        category: "Rolls"
-    }, {
+        name: "Oxford Formal Shirt",
+        image: UNS("1602810318383-e386cc2a3ccf"),
+        price: 1199,
+        description: "Crisp Oxford weave formal shirt with a classic collar and chest pocket. Ideal for office and formal occasions.",
+        category: "Men's Wear"
+    },
+    // ── Women's Wear ──────────────────────────────────────────────────────────
+    {
         _id: "6",
-        name: "Peri Peri Rolls",
-        image: food_6,
-        price: 12,
-        description: "Food provides essential nutrients for overall health and well-being",
-        category: "Rolls"
-    }, {
+        name: "Floral Wrap Dress",
+        image: UNS("1595777457583-95e059d581b8"),
+        price: 1799,
+        description: "Beautiful floral print wrap dress with tie-waist detail. Perfect for parties, brunch, and casual day-outs.",
+        category: "Women's Wear"
+    },
+    {
         _id: "7",
-        name: "Chicken Rolls",
-        image: food_7,
-        price: 20,
-        description: "Food provides essential nutrients for overall health and well-being",
-        category: "Rolls"
-    }, {
+        name: "Zip-Up Hoodie Jacket",
+        image: UNS("1548549557-dbe9946621da"),
+        price: 2299,
+        description: "Comfortable zip-up hoodie jacket in soft cotton blend. Features an adjustable hood and front kangaroo pocket.",
+        category: "Women's Wear"
+    },
+    {
         _id: "8",
-        name: "Veg Rolls",
-        image: food_8,
-        price: 15,
-        description: "Food provides essential nutrients for overall health and well-being",
-        category: "Rolls"
-    }, {
+        name: "Elegant Evening Gown",
+        image: UNS("1515886657613-9f3515b0c78f"),
+        price: 3499,
+        description: "Graceful evening gown in premium satin fabric. Flattering silhouette perfect for weddings and formal events.",
+        category: "Women's Wear"
+    },
+    {
         _id: "9",
-        name: "Ripple Ice Cream",
-        image: food_9,
-        price: 14,
-        description: "Food provides essential nutrients for overall health and well-being",
-        category: "Deserts"
-    }, {
+        name: "Solid Slim Fit T-Shirt",
+        image: UNS("1503341504253-dff4815485f1"),
+        price: 699,
+        description: "Solid colour slim fit t-shirt in premium combed cotton. Lightweight and breathable for all-day comfort.",
+        category: "Women's Wear"
+    },
+    {
         _id: "10",
-        name: "Fruit Ice Cream",
-        image: food_10,
-        price: 22,
-        description: "Food provides essential nutrients for overall health and well-being",
-        category: "Deserts"
-    }, {
+        name: "Cotton Casual Blouse",
+        image: UNS("1509631179647-0177331693ae"),
+        price: 849,
+        description: "Soft cotton casual blouse with an elegant drape. Pairs perfectly with trousers, skirts, or denim.",
+        category: "Women's Wear"
+    },
+    {
         _id: "11",
-        name: "Jar Ice Cream",
-        image: food_11,
-        price: 10,
-        description: "Food provides essential nutrients for overall health and well-being",
-        category: "Deserts"
-    }, {
+        name: "Smart Casual Midi Dress",
+        image: UNS("1469334031218-e382a71b716b"),
+        price: 2199,
+        description: "Chic midi dress in breathable fabric. Versatile design suited for office, dates, and weekend outings.",
+        category: "Women's Wear"
+    },
+    // ── Kids' Collection ──────────────────────────────────────────────────────
+    {
         _id: "12",
-        name: "Vanilla Ice Cream",
-        image: food_12,
-        price: 12,
-        description: "Food provides essential nutrients for overall health and well-being",
-        category: "Deserts"
+        name: "Boys Denim Outfit Set",
+        image: UNS("1519457431-44ccd64a579b"),
+        price: 899,
+        description: "Stylish denim shirt and jeans combo for boys. Durable, soft, and comfortable for active kids.",
+        category: "Kids' Collection"
     },
     {
         _id: "13",
-        name: "Chicken Sandwich",
-        image: food_13,
-        price: 12,
-        description: "Food provides essential nutrients for overall health and well-being",
-        category: "Sandwich"
+        name: "Girls Floral Frock",
+        image: UNS("1518831959646-742c3a14ebf7"),
+        price: 799,
+        description: "Pretty floral print frock for girls with bow waist detail. Soft fabric that is gentle on skin. Machine washable.",
+        category: "Kids' Collection"
     },
     {
         _id: "14",
-        name: "Vegan Sandwich",
-        image: food_14,
-        price: 18,
-        description: "Food provides essential nutrients for overall health and well-being",
-        category: "Sandwich"
-    }, {
+        name: "Kids Graphic Tee + Joggers",
+        image: UNS("1622290291468-a28f7a7dc6a8"),
+        price: 599,
+        description: "Fun graphic tee paired with comfortable elastic-waist jogger pants. Made from soft 100% cotton.",
+        category: "Kids' Collection"
+    },
+    {
         _id: "15",
-        name: "Grilled Sandwich",
-        image: food_15,
-        price: 16,
-        description: "Food provides essential nutrients for overall health and well-being",
-        category: "Sandwich"
-    }, {
+        name: "Kids Winter Tracksuit",
+        image: UNS("1503454537195-1dcabb73ffb9"),
+        price: 1299,
+        description: "Warm and cozy winter tracksuit with fleece lining. Keeps children comfortable through colder months.",
+        category: "Kids' Collection"
+    },
+    // ── Footwear ──────────────────────────────────────────────────────────────
+    {
         _id: "16",
-        name: "Bread Sandwich",
-        image: food_16,
-        price: 24,
-        description: "Food provides essential nutrients for overall health and well-being",
-        category: "Sandwich"
-    }, {
+        name: "Men's Leather Loafers",
+        image: UNS("1549298916-b41d501d3772"),
+        price: 2499,
+        description: "Classic genuine leather loafers with cushioned insole. Versatile style for office and casual occasions.",
+        category: "Footwear"
+    },
+    {
         _id: "17",
-        name: "Cup Cake",
-        image: food_17,
-        price: 14,
-        description: "Food provides essential nutrients for overall health and well-being",
-        category: "Cake"
-    }, {
+        name: "Women's Block Heel Sandals",
+        image: UNS("1543163521-1bf539c55dd2"),
+        price: 1999,
+        description: "Elegant block heel sandals with ankle strap closure. Stylish and comfortable for all-day wear.",
+        category: "Footwear"
+    },
+    {
         _id: "18",
-        name: "Vegan Cake",
-        image: food_18,
-        price: 12,
-        description: "Food provides essential nutrients for overall health and well-being",
-        category: "Cake"
-    }, {
+        name: "Unisex Canvas Sneakers",
+        image: UNS("1542291026-7eec264c27ff"),
+        price: 1499,
+        description: "Trendy canvas sneakers with rubber sole and lace-up closure. Available in multiple colours.",
+        category: "Footwear"
+    },
+    {
         _id: "19",
-        name: "Butterscotch Cake",
-        image: food_19,
-        price: 20,
-        description: "Food provides essential nutrients for overall health and well-being",
-        category: "Cake"
-    }, {
+        name: "Men's Sports Running Shoes",
+        image: UNS("1560343090-f0409e92791a"),
+        price: 3499,
+        description: "High-performance running shoes with advanced cushioning and breathable mesh upper. Ideal for daily training.",
+        category: "Footwear"
+    },
+    {
         _id: "20",
-        name: "Sliced Cake",
-        image: food_20,
-        price: 15,
-        description: "Food provides essential nutrients for overall health and well-being",
-        category: "Cake"
-    }, {
+        name: "Kids Velcro School Shoes",
+        image: UNS("1575537302964-96cd47c06b1b"),
+        price: 799,
+        description: "Sturdy school shoes with easy velcro strap closure. Durable leather-look upper with cushioned sole.",
+        category: "Footwear"
+    },
+    // ── Accessories ───────────────────────────────────────────────────────────
+    {
         _id: "21",
-        name: "Garlic Mushroom ",
-        image: food_21,
-        price: 14,
-        description: "Food provides essential nutrients for overall health and well-being",
-        category: "Pure Veg"
-    }, {
+        name: "Gold Statement Necklace",
+        image: UNS("1515562141207-7a88fb7ce338"),
+        price: 3999,
+        description: "Stunning gold-plated statement necklace with intricate design. A bold piece for special occasions.",
+        category: "Accessories"
+    },
+    {
         _id: "22",
-        name: "Fried Cauliflower",
-        image: food_22,
-        price: 22,
-        description: "Food provides essential nutrients for overall health and well-being",
-        category: "Pure Veg"
-    }, {
+        name: "Diamond Solitaire Ring",
+        image: UNS("1606760227091-3dd870d97f1d"),
+        price: 12999,
+        description: "Elegant solitaire ring in solid 14K gold with a genuine diamond centre stone. A timeless heirloom design.",
+        category: "Accessories"
+    },
+    {
         _id: "23",
-        name: "Mix Veg Pulao",
-        image: food_23,
-        price: 10,
-        description: "Food provides essential nutrients for overall health and well-being",
-        category: "Pure Veg"
-    }, {
+        name: "Stud Earrings Set",
+        image: UNS("1535632066927-ab7c9ab60908"),
+        price: 2999,
+        description: "Delicate stud earrings in rose gold finish with cubic zirconia stones. Lightweight and hypoallergenic.",
+        category: "Accessories"
+    },
+    {
         _id: "24",
-        name: "Rice Zucchini",
-        image: food_24,
-        price: 12,
-        description: "Food provides essential nutrients for overall health and well-being",
-        category: "Pure Veg"
+        name: "Aviator Sunglasses",
+        image: UNS("1572635196237-14b3f281503f"),
+        price: 1499,
+        description: "Classic aviator sunglasses with UV400 polarised lenses. Lightweight metal frame in timeless gold finish.",
+        category: "Accessories"
     },
     {
         _id: "25",
-        name: "Cheese Pasta",
-        image: food_25,
-        price: 12,
-        description: "Food provides essential nutrients for overall health and well-being",
-        category: "Pasta"
+        name: "Classic Leather Tote Bag",
+        image: UNS("1548036328-c9fa89d128fa"),
+        price: 2499,
+        description: "Spacious and stylish leather tote bag with multiple compartments. Perfect for work, travel, and daily use.",
+        category: "Accessories"
     },
+    // ── Ethnic Wear ───────────────────────────────────────────────────────────
     {
         _id: "26",
-        name: "Tomato Pasta",
-        image: food_26,
-        price: 18,
-        description: "Food provides essential nutrients for overall health and well-being",
-        category: "Pasta"
-    }, {
+        name: "Men's Kurta Pyjama Set",
+        image: UNS("1568702846914-96b305d2aaeb"),
+        price: 1499,
+        description: "Traditional yet contemporary kurta pyjama set in premium cotton. Ideal for festivals and celebrations.",
+        category: "Ethnic Wear"
+    },
+    {
         _id: "27",
-        name: "Creamy Pasta",
-        image: food_27,
-        price: 16,
-        description: "Food provides essential nutrients for overall health and well-being",
-        category: "Pasta"
-    }, {
+        name: "Embroidered Anarkali Kurti",
+        image: UNS("1583743814966-8936f5b7be1a"),
+        price: 1299,
+        description: "Beautifully embroidered Anarkali-style kurti in soft georgette. Flattering A-line silhouette for all body types.",
+        category: "Ethnic Wear"
+    },
+    {
         _id: "28",
-        name: "Chicken Pasta",
-        image: food_28,
-        price: 24,
-        description: "Food provides essential nutrients for overall health and well-being",
-        category: "Pasta"
-    }, {
+        name: "Bridal Lehenga Choli",
+        image: UNS("1550614000-4895a10e1bfd"),
+        price: 8999,
+        description: "Opulent bridal lehenga choli with heavy embroidery and zari work. Comes with a matching dupatta.",
+        category: "Ethnic Wear"
+    },
+    {
         _id: "29",
-        name: "Buttter Noodles",
-        image: food_29,
-        price: 14,
-        description: "Food provides essential nutrients for overall health and well-being",
-        category: "Noodles"
-    }, {
+        name: "Men's Wedding Sherwani",
+        image: UNS("1507679799987-c73779587ccf"),
+        price: 7999,
+        description: "Regal wedding sherwani with intricate thread embroidery. Comes with matching churidar and pocket square.",
+        category: "Ethnic Wear"
+    },
+    {
         _id: "30",
-        name: "Veg Noodles",
-        image: food_30,
-        price: 12,
-        description: "Food provides essential nutrients for overall health and well-being",
-        category: "Noodles"
-    }, {
-        _id: "31",
-        name: "Somen Noodles",
-        image: food_31,
-        price: 20,
-        description: "Food provides essential nutrients for overall health and well-being",
-        category: "Noodles"
-    }, {
-        _id: "32",
-        name: "Cooked Noodles",
-        image: food_32,
-        price: 15,
-        description: "Food provides essential nutrients for overall health and well-being",
-        category: "Noodles"
+        name: "Printed Palazzo Suit Set",
+        image: UNS("1496747611176-843222e1e57c"),
+        price: 1799,
+        description: "Flowy printed palazzo suit set with a straight kurta and wide-leg palazzos. Comfortable and elegant.",
+        category: "Ethnic Wear"
     }
 ]

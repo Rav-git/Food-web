@@ -5,40 +5,38 @@ const CancellationRefund = () => {
   return (
     <div className='policy-page'>
       <div className="policy-hero">
-        <h1>Cancellation &amp; Refund Policy</h1>
-        <p className="policy-date">Last updated on 01-05-2026 17:49:44</p>
+        <h1>Return &amp; Refund Policy</h1>
+        <p className="policy-date">Last updated on 03-05-2026</p>
       </div>
       <div className="policy-container">
         <div className="policy-card">
           <p className="policy-intro">
-            RAVI believes in helping its customers as far as possible, and has therefore a liberal
-            cancellation policy. Under this policy:
+            At <strong>Classic Fashion Point</strong>, we believe in a hassle-free shopping experience. We have a customer-friendly return and refund policy to ensure your complete satisfaction with every purchase.
           </p>
           <ul className="policy-list">
             <li>
-              Cancellations will be considered only if the request is made immediately after placing
-              the order. However, the cancellation request may not be entertained if the orders have
-              been communicated to the vendors/merchants and they have initiated the process of
-              shipping them.
+              Cancellations will be considered only if the request is made <strong>within 24 hours</strong> of placing the order. Once the order has been dispatched to our logistics partner, cancellation requests cannot be entertained.
             </li>
             <li>
-              RAVI does not accept cancellation requests for perishable items like flowers, eatables
-              etc. However, refund/replacement can be made if the customer establishes that the
-              quality of product delivered is not good.
+              Returns are accepted within <strong>7 days</strong> of delivery for clothing and accessories, provided the item is unused, unwashed, and in its original packaging with all tags intact.
             </li>
             <li>
-              In case of receipt of damaged or defective items please report the same to our Customer
-              Service team. The request will be entertained once the merchant has checked and
-              determined the same at his own end. This should be reported within <strong>30 Days</strong> of
-              receipt of the products. In case you feel that the product received is not as shown on
-              the site or as per your expectations, you must bring it to the notice of our customer
-              service within <strong>30 Days</strong> of receiving the product. The Customer Service Team
-              after looking into your complaint will take an appropriate decision.
+              Items such as innerwear, swimwear, and customised/personalised products are <strong>not eligible for return or exchange</strong> due to hygiene reasons.
             </li>
             <li>
-              In case of complaints regarding products that come with a warranty from manufacturers,
-              please refer the issue to them. In case of any Refunds approved by RAVI, it'll take{' '}
-              <strong>9-15 Days</strong> for the refund to be processed to the end customer.
+              In case of receipt of a <strong>damaged, defective, or incorrect item</strong>, please report the issue to our Customer Service team within <strong>48 hours</strong> of delivery with photographic evidence. We will arrange a free reverse pickup and replacement or full refund at no extra charge.
+            </li>
+            <li>
+              If the product received is not as shown on the website or does not match your expectations (colour variation due to display settings is not considered a defect), please contact us within <strong>7 days</strong> of delivery. Our team will review the complaint and take appropriate action.
+            </li>
+            <li>
+              Once a return is received and inspected at our warehouse, the refund will be processed within <strong>5–7 business days</strong> to the original payment method. For Cash on Delivery orders, refunds will be issued to the bank account provided by the customer.
+            </li>
+            <li>
+              Exchange requests for a different size or colour are accepted within <strong>7 days</strong> of delivery, subject to stock availability. Exchange shipping is free for the first exchange per order.
+            </li>
+            <li>
+              In case of any Refunds approved by Classic Fashion Point, it will take <strong>5–9 business days</strong> for the refund to be credited to the end customer's account, depending on the bank or payment provider.
             </li>
           </ul>
         </div>

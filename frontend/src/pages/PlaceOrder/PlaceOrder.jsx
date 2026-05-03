@@ -9,6 +9,7 @@ import axios from 'axios';
 const PlaceOrder = () => {
 
     const [payment, setPayment] = useState("cod")
+    // "stripe" key kept for backend compatibility; UI label shows Razorpay
     const [data, setData] = useState({
         firstName: "",
         lastName: "",
@@ -83,7 +84,7 @@ const PlaceOrder = () => {
     return (
         <form onSubmit={placeOrder} className='place-order'>
             <div className="place-order-left">
-                <p className='title'>Delivery Information</p>
+                <p className='title'>Shipping Information</p>
                 <div className="multi-field">
                     <input type="text" name='firstName' onChange={onChangeHandler} value={data.firstName} placeholder='First name' required />
                     <input type="text" name='lastName' onChange={onChangeHandler} value={data.lastName} placeholder='Last name' required />
@@ -119,10 +120,10 @@ const PlaceOrder = () => {
                     </div>
                     <div onClick={() => setPayment("stripe")} className="payment-option">
                         <img src={payment === "stripe" ? assets.checked : assets.un_checked} alt="" />
-                        <p>Stripe ( Credit / Debit )</p>
+                        <p>Razorpay ( Credit / Debit / UPI )</p>
                     </div>
                 </div>
-                <button className='place-order-submit' type='submit'>{payment==="cod"?"Place Order":"Proceed To Payment"}</button>
+                <button className='place-order-submit' type='submit'>{payment === "cod" ? "Place Order" : "Proceed To Payment"}</button>
             </div>
         </form>
     )

@@ -20,7 +20,7 @@
     padding: 10px;
     border: 1px solid #C5C5C5;
     border-radius: 4px;
-    outline-color: tomato;
+    outline-color: #C9A84C;
 }
 .place-order-left .multi-field{
     display: flex;
@@ -33,7 +33,7 @@
 .place-order-submit{
     margin-top: 50px;
     border: none;
-    background-color: tomato;
+    background-color: #C9A84C;
     color: white;
     padding: 12px 30px;
     border-radius: 4px;
@@ -53,14 +53,14 @@
     display: flex;
     align-items: center;
     gap: 10px ;
-    border: 1px solid tomato;
+    border: 1px solid #C9A84C;
     padding: 15px;
     border-radius: 4px;
     min-width: 300px;
     cursor: pointer;
 }
 .payment .payment-option:hover{
-    background-color:  #ffe7de;
+    background-color: #fdf8ed;
 }
 
 @media (max-width:700px) {
