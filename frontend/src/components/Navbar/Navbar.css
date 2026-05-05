@@ -57,7 +57,7 @@
     gap: 20px;
 }
 
-/* Search toggle button */
+/* Search toggle */
 .search-toggle {
     background: transparent;
     border: none;
@@ -72,7 +72,7 @@
     display: block;
 }
 
-/* Cart icon with count badge */
+/* Cart icon */
 .navbar-cart-icon {
     position: relative;
     display: flex;
@@ -98,11 +98,11 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 0 4px;
+    padding: 0 3px;
     line-height: 1;
 }
 
-/* Sign in button */
+/* Sign in */
 .signin-btn {
     background: transparent;
     font-size: 14px;
@@ -122,7 +122,7 @@
     color: white;
 }
 
-/* Profile dropdown */
+/* Profile */
 .navbar-profile {
     position: relative;
     cursor: pointer;
@@ -210,15 +210,14 @@
     transform: translateY(-7px) rotate(-45deg);
 }
 
-/* Search overlay */
+/* ── Search overlay ── */
 .search-overlay {
+    position: sticky;
+    top: 58px;
+    z-index: 99;
     background: white;
     border-bottom: 2px solid #C9A84C;
-    padding: 14px 0;
     animation: slideDown 0.2s ease;
-    position: sticky;
-    top: 60px;
-    z-index: 99;
 }
 
 .search-overlay-inner {
@@ -227,31 +226,38 @@
     gap: 10px;
     width: 80%;
     margin: 0 auto;
+    padding: 13px 0;
+}
+
+.search-icon-sm {
+    width: 18px;
+    opacity: 0.4;
+    flex-shrink: 0;
 }
 
 .search-overlay input {
     flex: 1;
     border: none;
     outline: none;
-    font-size: 16px;
+    font-size: 15px;
     font-family: 'Outfit', sans-serif;
     color: #1C1C1C;
     background: transparent;
-    padding: 4px 0;
 }
 
 .search-overlay input::placeholder {
-    color: #aaa;
+    color: #bbb;
 }
 
 .search-clear {
     background: transparent;
     border: none;
-    color: #aaa;
-    font-size: 16px;
+    color: #bbb;
+    font-size: 15px;
     cursor: pointer;
     padding: 0 4px;
-    transition: color 0.2s;
+    transition: color 0.15s;
+    line-height: 1;
 }
 
 .search-clear:hover {
@@ -261,9 +267,9 @@
 .search-close-btn {
     background: transparent;
     border: 1px solid #ddd;
-    color: #555;
-    font-size: 13px;
-    padding: 6px 16px;
+    color: #666;
+    font-size: 12px;
+    padding: 6px 14px;
     border-radius: 20px;
     cursor: pointer;
     font-family: 'Outfit', sans-serif;
@@ -276,17 +282,81 @@
     color: #C9A84C;
 }
 
+/* Suggestions dropdown */
+.search-suggestions {
+    width: 80%;
+    margin: 0 auto;
+    border-top: 1px solid #f0e8cc;
+    background: white;
+    max-height: 280px;
+    overflow-y: auto;
+}
+
+.suggestion-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 11px 4px;
+    cursor: pointer;
+    border-bottom: 1px solid #f8f8f8;
+    transition: background 0.15s;
+    gap: 12px;
+}
+
+.suggestion-item:hover {
+    background: #fdf8ed;
+}
+
+.suggestion-name {
+    font-size: 14px;
+    font-weight: 500;
+    color: #1C1C1C;
+    flex: 1;
+}
+
+.suggestion-cat {
+    font-size: 11px;
+    color: #aaa;
+    background: #f5f5f5;
+    padding: 3px 9px;
+    border-radius: 10px;
+    white-space: nowrap;
+    flex-shrink: 0;
+}
+
+.suggestion-view-all {
+    padding: 12px 4px;
+    font-size: 13px;
+    color: #C9A84C;
+    cursor: pointer;
+    font-weight: 500;
+    text-align: center;
+    transition: color 0.15s;
+}
+
+.suggestion-view-all:hover {
+    color: #b8913a;
+}
+
+.suggestion-empty {
+    padding: 16px 4px;
+    font-size: 13px;
+    color: #aaa;
+    text-align: center;
+}
+
 @keyframes slideDown {
-    from { opacity: 0; transform: translateY(-8px); }
+    from { opacity: 0; transform: translateY(-6px); }
     to { opacity: 1; transform: translateY(0); }
 }
 
-/* Responsive */
+/* ── Responsive ── */
 @media (max-width: 1050px) {
     .brand-name { font-size: 17px; }
     .navbar-menu { gap: 20px; font-size: 15px; }
     .navbar-right { gap: 16px; }
-    .search-overlay-inner { width: 90%; }
+    .search-overlay-inner,
+    .search-suggestions { width: 90%; }
 }
 
 @media (max-width: 750px) {
@@ -297,15 +367,15 @@
         position: fixed;
         top: 0;
         left: 0;
-        width: 75%;
-        max-width: 300px;
+        width: 72%;
+        max-width: 280px;
         height: 100vh;
         background: white;
         flex-direction: column;
-        padding: 80px 32px 32px;
-        gap: 28px;
-        font-size: 18px;
-        box-shadow: 4px 0 20px rgba(0,0,0,0.15);
+        padding: 80px 28px 32px;
+        gap: 26px;
+        font-size: 17px;
+        box-shadow: 4px 0 24px rgba(0,0,0,0.15);
         z-index: 98;
         animation: slideRight 0.25s ease;
     }
@@ -319,11 +389,15 @@
         to { transform: translateX(0); }
     }
 
-    .signin-btn { padding: 7px 16px; font-size: 13px; }
-    .brand-name { font-size: 14px; letter-spacing: 1px; }
-    .search-overlay-inner { width: 90%; }
+    .signin-btn { padding: 7px 14px; font-size: 13px; }
+    .brand-name { font-size: 14px; letter-spacing: 0.8px; }
+    .search-overlay-inner,
+    .search-suggestions { width: 92%; }
+    .search-suggestions { max-height: 220px; }
+    .suggestion-cat { display: none; }
 }
 
 @media (max-width: 480px) {
-    .navbar-right { gap: 12px; }
+    .navbar-right { gap: 10px; }
+    .signin-btn { padding: 6px 12px; font-size: 12px; }
 }

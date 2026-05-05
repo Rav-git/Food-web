@@ -10,12 +10,19 @@
     letter-spacing: 0.4px;
     position: relative;
     z-index: 200;
+    min-height: 38px;
 }
 
-.announcement-bar p {
+.ann-msg {
     flex: 1;
     text-align: center;
     font-weight: 500;
+    animation: annFade 0.4s ease;
+}
+
+@keyframes annFade {
+    from { opacity: 0; transform: translateY(4px); }
+    to { opacity: 1; transform: translateY(0); }
 }
 
 .ann-nav {
@@ -25,8 +32,9 @@
     cursor: pointer;
     font-size: 20px;
     line-height: 1;
-    padding: 0 4px;
+    padding: 0 6px;
     transition: opacity 0.2s;
+    flex-shrink: 0;
 }
 
 .ann-nav:hover {
@@ -36,25 +44,28 @@
 .ann-close {
     background: transparent;
     border: none;
-    color: #aaa;
+    color: #666;
     cursor: pointer;
-    font-size: 13px;
+    font-size: 12px;
     padding: 0 4px;
     transition: color 0.2s;
     position: absolute;
-    right: 12px;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
 }
 
 .ann-close:hover {
-    color: white;
+    color: #fff;
 }
 
 @media (max-width: 600px) {
     .announcement-bar {
         font-size: 11px;
-        padding: 8px 36px 8px 12px;
+        padding: 8px 32px 8px 8px;
     }
     .ann-nav {
-        display: none;
+        font-size: 16px;
+        padding: 0 2px;
     }
 }
