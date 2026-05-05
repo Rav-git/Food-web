@@ -1,0 +1,101 @@
+.newsletter {
+    background: linear-gradient(135deg, #1C1C1C 0%, #2d2d2d 100%);
+    border-radius: 16px;
+    margin: 60px 0 40px;
+    padding: 60px 40px;
+    text-align: center;
+}
+
+.newsletter-content {
+    max-width: 520px;
+    margin: 0 auto;
+}
+
+.newsletter h2 {
+    font-size: 32px;
+    font-weight: 700;
+    color: #C9A84C;
+    margin-bottom: 12px;
+    letter-spacing: 1px;
+}
+
+.newsletter p {
+    color: #ccc;
+    font-size: 15px;
+    line-height: 1.6;
+    margin-bottom: 28px;
+}
+
+.newsletter-form {
+    display: flex;
+    gap: 0;
+    border-radius: 50px;
+    overflow: hidden;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.3);
+}
+
+.newsletter-form input {
+    flex: 1;
+    padding: 14px 22px;
+    border: none;
+    outline: none;
+    font-size: 14px;
+    font-family: 'Outfit', sans-serif;
+    background: #fff;
+    color: #1C1C1C;
+}
+
+.newsletter-form input::placeholder {
+    color: #aaa;
+}
+
+.newsletter-form button {
+    padding: 14px 28px;
+    background: #C9A84C;
+    color: white;
+    border: none;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.2s;
+    font-family: 'Outfit', sans-serif;
+    letter-spacing: 0.5px;
+    white-space: nowrap;
+}
+
+.newsletter-form button:hover {
+    background: #b8913a;
+}
+
+.newsletter-success {
+    font-size: 16px !important;
+    color: #C9A84C !important;
+    font-weight: 600;
+    padding: 16px;
+    background: rgba(201,168,76,0.1);
+    border-radius: 8px;
+    border: 1px solid rgba(201,168,76,0.3);
+}
+
+.newsletter-note {
+    font-size: 11px !important;
+    color: #666 !important;
+    margin-top: 14px !important;
+    margin-bottom: 0 !important;
+}
+
+@media (max-width: 600px) {
+    .newsletter {
+        padding: 40px 20px;
+        border-radius: 0;
+        margin: 40px -5%;
+    }
+    .newsletter-form {
+        flex-direction: column;
+        border-radius: 10px;
+    }
+    .newsletter-form input,
+    .newsletter-form button {
+        border-radius: 0;
+    }
+}

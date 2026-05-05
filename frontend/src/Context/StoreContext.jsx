@@ -9,8 +9,19 @@ const StoreContextProvider = (props) => {
     const [food_list] = useState(initialProductList);
     const [cartItems, setCartItems] = useState({});
     const [token, setToken] = useState("")
+    const [searchTerm, setSearchTerm] = useState("")
+    const [wishlist, setWishlist] = useState(new Set())
     const currency = "₹";
     const deliveryCharge = 99;
+
+    const toggleWishlist = (itemId) => {
+        setWishlist(prev => {
+            const next = new Set(prev);
+            if (next.has(itemId)) next.delete(itemId);
+            else next.add(itemId);
+            return next;
+        });
+    }
 
     const addToCart = async (itemId) => {
         if (!cartItems[itemId]) {
@@ -44,6 +55,10 @@ const StoreContextProvider = (props) => {
         return totalAmount;
     }
 
+    const getTotalCartCount = () => {
+        return Object.values(cartItems).reduce((sum, qty) => sum + (qty > 0 ? qty : 0), 0);
+    }
+
     const loadCartData = async (token) => {
         const response = await axios.post(url + "/api/cart/get", {}, { headers: token });
         setCartItems(response.data.cartData);
@@ -67,12 +82,17 @@ const StoreContextProvider = (props) => {
         addToCart,
         removeFromCart,
         getTotalCartAmount,
+        getTotalCartCount,
         token,
         setToken,
         loadCartData,
         setCartItems,
         currency,
-        deliveryCharge
+        deliveryCharge,
+        searchTerm,
+        setSearchTerm,
+        wishlist,
+        toggleWishlist
     };
 
     return (
