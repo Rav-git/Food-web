@@ -39,7 +39,10 @@ const Footer = () => {
         </div>
       </div>
       <hr />
-      <p className="footer-copyright">Copyright 2026 © ClassicFashionPoint.com — All Rights Reserved.</p>
+      <div className="footer-bottom">
+        <p className="footer-legal-name">Merchant Legal Entity: <strong>Classic Fashion Point</strong> | Retail Fashion Store | Faridabad, Haryana, India</p>
+        <p className="footer-copyright">Copyright 2026 © Classic Fashion Point — All Rights Reserved.</p>
+      </div>
     </div>
   )
 }

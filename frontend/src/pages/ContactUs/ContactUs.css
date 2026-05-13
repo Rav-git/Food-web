@@ -88,9 +88,89 @@
   text-decoration: underline;
 }
 
+.policy-container .policy-card + .policy-card {
+  margin-top: 24px;
+}
+
+/* Business identity card */
+.business-identity-card {
+  border-top: 4px solid #C9A84C;
+}
+
+.biz-name-banner {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  flex-wrap: wrap;
+  margin-bottom: 14px;
+}
+
+.biz-name-banner h2 {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #1C1C1C;
+  letter-spacing: 1px;
+  margin: 0;
+}
+
+.biz-type-badge {
+  background: #fdf8ed;
+  border: 1px solid #C9A84C;
+  color: #b8913a;
+  font-size: 0.78rem;
+  font-weight: 600;
+  padding: 4px 12px;
+  border-radius: 20px;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+}
+
+.biz-tagline {
+  color: #666;
+  font-size: 0.97rem;
+  line-height: 1.7;
+  margin-bottom: 20px;
+}
+
+.biz-meta-row {
+  display: flex;
+  gap: 32px;
+  flex-wrap: wrap;
+  padding-top: 16px;
+  border-top: 1px solid #f0f0f0;
+}
+
+.biz-meta-item {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.biz-meta-label {
+  font-size: 0.78rem;
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
+  color: #aaa;
+  font-weight: 600;
+}
+
+.biz-meta-value {
+  font-size: 0.97rem;
+  color: #1C1C1C;
+}
+
+.policy-section-title {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #1C1C1C;
+  margin-bottom: 16px;
+  letter-spacing: 0.5px;
+}
+
 @media (max-width: 600px) {
   .policy-hero h1 { font-size: 1.6rem; }
   .policy-card { padding: 24px 18px; }
   .contact-item { flex-direction: column; gap: 4px; }
   .contact-label { min-width: unset; }
+  .biz-name-banner h2 { font-size: 1.4rem; }
 }
