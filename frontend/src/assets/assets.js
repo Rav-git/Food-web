@@ -509,7 +509,7 @@ export const food_list = [
         _id: "36",
         name: "Women's Plain Cotton Leggings",
         image: UNS("1618355281951-a174b87198e2"),
-        price: 199,
+        price: 200,
         description: "Comfortable 4-way stretch cotton leggings with wide waistband. Available in black, navy, and grey.",
         category: "Women's Wear",
         sizes: ["XS", "S", "M", "L", "XL"],

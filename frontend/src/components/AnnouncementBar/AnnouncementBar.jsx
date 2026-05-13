@@ -2,8 +2,8 @@ import React, { useState, useEffect, useRef } from 'react'
 import './AnnouncementBar.css'
 
 const messages = [
+    "🚚 FREE Delivery within 20 km of our Faridabad store  |  Free shipping on orders above ₹999!",
     "📞 Call +91 8295807935 for Special Discounts & Exclusive Offers — Bulk orders welcome!",
-    "FREE SHIPPING on orders above ₹999  |  Special prices on bulk orders!",
     "New Arrivals every Friday  |  Call us for the latest deals & festival offers!",
     "Easy 7-day returns  |  Secure payments  |  Pan India delivery"
 ]

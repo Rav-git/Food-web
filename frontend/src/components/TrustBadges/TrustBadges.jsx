@@ -2,7 +2,7 @@ import React from 'react'
 import './TrustBadges.css'
 
 const badges = [
-    { icon: "🚚", title: "Free Delivery", subtitle: "On orders above ₹999" },
+    { icon: "🚚", title: "Free Delivery", subtitle: "Within 20 km | Orders above ₹999" },
     { icon: "↩️", title: "Easy Returns", subtitle: "7-day hassle-free returns" },
     { icon: "🔒", title: "Secure Payment", subtitle: "100% safe checkout" },
     { icon: "💬", title: "24/7 Support", subtitle: "We're always here" },
