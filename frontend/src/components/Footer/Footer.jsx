@@ -40,7 +40,14 @@ const Footer = () => {
       </div>
       <hr />
       <div className="footer-bottom">
-        <p className="footer-legal-name">Merchant Legal Entity: <strong>Classic Fashion Point</strong> | Retail Fashion Store | Faridabad, Haryana, India</p>
+        <p className="footer-legal-name">
+          Merchant Legal Entity Name: <strong>Classic Fashion Point</strong> &nbsp;|&nbsp;
+          Registered Business: Retail Fashion Store &nbsp;|&nbsp;
+          174, 33 Feet Road, Sanjay Colony, Sector 23, Faridabad, Haryana — 121005, India
+        </p>
+        <p className="footer-legal-name" style={{marginTop:'4px'}}>
+          All prices in Indian Rupees (INR) &nbsp;|&nbsp; Phone: +91 8295807935 &nbsp;|&nbsp; Email: allu2001arjun@gmail.com
+        </p>
         <p className="footer-copyright">Copyright 2026 © Classic Fashion Point — All Rights Reserved.</p>
       </div>
     </div>

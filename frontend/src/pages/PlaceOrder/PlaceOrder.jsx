@@ -104,12 +104,13 @@ const PlaceOrder = () => {
             <div className="place-order-right">
                 <div className="cart-total">
                     <h2>Cart Totals</h2>
+                    <p style={{fontSize:'12px',color:'#888',margin:'4px 0 12px'}}>All prices in Indian Rupees (INR)</p>
                     <div>
                         <div className="cart-total-details"><p>Subtotal</p><p>{currency}{getTotalCartAmount()}</p></div>
                         <hr />
                         <div className="cart-total-details"><p>Delivery Fee</p><p>{currency}{getTotalCartAmount() === 0 ? 0 : deliveryCharge}</p></div>
                         <hr />
-                        <div className="cart-total-details"><b>Total</b><b>{currency}{getTotalCartAmount() === 0 ? 0 : getTotalCartAmount() + deliveryCharge}</b></div>
+                        <div className="cart-total-details"><b>Total (INR)</b><b>{currency}{getTotalCartAmount() === 0 ? 0 : getTotalCartAmount() + deliveryCharge}</b></div>
                     </div>
                 </div>
                 <div className="payment">

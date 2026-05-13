@@ -99,13 +99,14 @@
 }
 
 .footer-legal-name {
-    font-size: 12px;
-    color: #666;
+    font-size: 13px;
+    color: #aaa;
     letter-spacing: 0.3px;
 }
 
 .footer-legal-name strong {
     color: #C9A84C;
+    font-size: 14px;
 }
 
 .footer-copyright {
