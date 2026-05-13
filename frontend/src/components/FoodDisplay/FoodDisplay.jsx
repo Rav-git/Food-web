@@ -6,7 +6,7 @@ import { StoreContext } from '../../Context/StoreContext'
 const FoodDisplay = ({ category }) => {
 
     const { food_list, searchTerm } = useContext(StoreContext)
-    const [sortBy, setSortBy] = useState('default')
+    const [sortBy, setSortBy] = useState('price-asc')
 
     let filtered = food_list.filter(item => {
         const matchCategory = category === "All" || category === item.category
