@@ -3,6 +3,7 @@ import Header from '../../components/Header/Header'
 import ExploreMenu from '../../components/ExploreMenu/ExploreMenu'
 import FoodDisplay from '../../components/FoodDisplay/FoodDisplay'
 import TrustBadges from '../../components/TrustBadges/TrustBadges'
+import OfferBanner from '../../components/OfferBanner/OfferBanner'
 import Newsletter from '../../components/Newsletter/Newsletter'
 
 const Home = () => {
@@ -13,6 +14,7 @@ const Home = () => {
         <>
             <Header />
             <TrustBadges />
+            <OfferBanner />
             <ExploreMenu setCategory={setCategory} category={category} />
             <FoodDisplay category={category} />
             <Newsletter />
