@@ -73,7 +73,7 @@ export const menu_list = [
     },
     {
         menu_name: "Ethnic Wear",
-        menu_image: UNS("1568702846914-96b305d2aaeb", 100, 100)
+        menu_image: UNS("1657367144068-935d1d9e5e15", 100, 100)
     }
 ]
 
@@ -326,7 +326,7 @@ export const food_list = [
     {
         _id: "21",
         name: "Pack of 5 Cotton Ankle Socks",
-        image: UNS("1586350977766-af9de7e2bce0"),
+        image: UNS("1640026199235-c24aa417b552"),
         price: 39,
         description: "Soft cotton ankle-length socks in assorted colours. Breathable, anti-odour, and comfortable for everyday use.",
         category: "Accessories",
@@ -338,7 +338,7 @@ export const food_list = [
     {
         _id: "22",
         name: "Men's Canvas Belt",
-        image: UNS("1624378439575-d8705ad7ae80"),
+        image: UNS("1705493655920-20c572928501"),
         price: 149,
         description: "Durable canvas belt with a sturdy metal buckle. Casual and sporty — pairs well with chinos, jeans, and shorts.",
         category: "Accessories",
@@ -387,7 +387,7 @@ export const food_list = [
     {
         _id: "26",
         name: "Men's Kurta Pyjama Set",
-        image: UNS("1568702846914-96b305d2aaeb"),
+        image: UNS("1628250521470-28c1fc54616c"),
         price: 1499,
         description: "Traditional yet contemporary kurta pyjama set in premium cotton. Ideal for festivals and celebrations.",
         category: "Ethnic Wear",
@@ -399,7 +399,7 @@ export const food_list = [
     {
         _id: "27",
         name: "Embroidered Anarkali Kurti",
-        image: UNS("1583743814966-8936f5b7be1a"),
+        image: UNS("1741847639057-b51a25d42892"),
         price: 1299,
         description: "Beautifully embroidered Anarkali-style kurti in soft georgette. Flattering A-line silhouette for all body types.",
         category: "Ethnic Wear",
@@ -423,7 +423,7 @@ export const food_list = [
     {
         _id: "29",
         name: "Men's Wedding Sherwani",
-        image: UNS("1507679799987-c73779587ccf"),
+        image: UNS("1600586634514-0d856b8d187b"),
         price: 7999,
         description: "Regal wedding sherwani with intricate thread embroidery. Comes with matching churidar and pocket square.",
         category: "Ethnic Wear",
@@ -435,7 +435,7 @@ export const food_list = [
     {
         _id: "30",
         name: "Printed Palazzo Suit Set",
-        image: UNS("1496747611176-843222e1e57c"),
+        image: UNS("1695231081377-2765f838043d"),
         price: 1799,
         description: "Flowy printed palazzo suit set with a straight kurta and wide-leg palazzos. Comfortable and elegant.",
         category: "Ethnic Wear",
@@ -460,7 +460,7 @@ export const food_list = [
     {
         _id: "32",
         name: "Men's Cotton Brief (Pack of 2)",
-        image: UNS("1529374255-59c6e2aa4ee1"),
+        image: UNS("1601393709771-3938c63d41a6"),
         price: 80,
         description: "Comfortable cotton briefs with elastic waistband. Soft, breathable, and durable for everyday wear.",
         category: "Men's Wear",
@@ -472,7 +472,7 @@ export const food_list = [
     {
         _id: "33",
         name: "Men's Sleeveless Vest / Baniyan (Pack of 2)",
-        image: UNS("1503341504253-dff4815485f1"),
+        image: UNS("1656587132121-aaccc57589cf"),
         price: 100,
         description: "100% cotton sleeveless vest (baniyan) for everyday use. Keeps you cool and comfortable through the day.",
         category: "Men's Wear",
@@ -484,7 +484,7 @@ export const food_list = [
     {
         _id: "34",
         name: "Men's Cotton Boxer Shorts",
-        image: UNS("1598033129183-c4f50c736f10"),
+        image: UNS("1617951907145-53f6eb87a3a3"),
         price: 149,
         description: "Relaxed-fit cotton boxer shorts with elastic waistband. Ideal for sleeping, lounging, or under trousers.",
         category: "Men's Wear",
@@ -496,7 +496,7 @@ export const food_list = [
     {
         _id: "35",
         name: "Men's Rubber Flip Flops",
-        image: UNS("1543163521-1bf539c55dd2"),
+        image: UNS("1692536631218-ce4264088abe"),
         price: 99,
         description: "Lightweight rubber flip flops with non-slip sole. Easy to slip on, comfortable for home, beach, and casual outings.",
         category: "Footwear",
@@ -508,7 +508,7 @@ export const food_list = [
     {
         _id: "36",
         name: "Women's Plain Cotton Leggings",
-        image: UNS("1469334031218-e382a71b716b"),
+        image: UNS("1618355281951-a174b87198e2"),
         price: 199,
         description: "Comfortable 4-way stretch cotton leggings with wide waistband. Available in black, navy, and grey.",
         category: "Women's Wear",
@@ -520,7 +520,7 @@ export const food_list = [
     {
         _id: "37",
         name: "Kids Plain Cotton T-Shirt",
-        image: UNS("1503454537195-1dcabb73ffb9"),
+        image: UNS("1620905385976-9f191e837efd"),
         price: 129,
         description: "Soft 100% cotton round-neck t-shirt for kids. Easy to wash, durable colours, and comfortable all day.",
         category: "Kids' Collection",
@@ -532,7 +532,7 @@ export const food_list = [
     {
         _id: "38",
         name: "Women's Budget Cotton Kurti",
-        image: UNS("1583743814966-8936f5b7be1a"),
+        image: UNS("1597983073750-16f5ded1321f"),
         price: 249,
         description: "Simple and elegant cotton kurti in solid colours. Lightweight, breathable, and perfect for daily casual wear.",
         category: "Ethnic Wear",
@@ -540,5 +540,105 @@ export const food_list = [
         isNew: true,
         isSale: false,
         originalPrice: null
+    },
+    // ── More Men's Basics ─────────────────────────────────────────────────────
+    {
+        _id: "39",
+        name: "Men's Cotton Track Pants",
+        image: UNS("1559962493-86e9d4fc7fee"),
+        price: 249,
+        description: "Comfortable elastic-waist cotton track pants with two side pockets. Great for jogging, gym, and daily casual wear.",
+        category: "Men's Wear",
+        sizes: CLOTH_SIZES,
+        isNew: false,
+        isSale: true,
+        originalPrice: 399
+    },
+    {
+        _id: "40",
+        name: "Men's Sports Shorts",
+        image: UNS("1602190420103-683df5093e86"),
+        price: 199,
+        description: "Lightweight quick-dry sports shorts with elastic waistband and drawstring. Ideal for gym, running, and outdoor activity.",
+        category: "Men's Wear",
+        sizes: CLOTH_SIZES,
+        isNew: false,
+        isSale: false,
+        originalPrice: null
+    },
+    // ── More Women's Basics ───────────────────────────────────────────────────
+    {
+        _id: "41",
+        name: "Women's Printed Cotton Kurti",
+        image: UNS("1597983073540-684a10b15ab1"),
+        price: 349,
+        description: "Stylish floral and geometric print cotton kurti. Relaxed fit, breathable fabric — perfect for everyday casual and semi-formal occasions.",
+        category: "Ethnic Wear",
+        sizes: ["XS", ...CLOTH_SIZES],
+        isNew: true,
+        isSale: false,
+        originalPrice: null
+    },
+    {
+        _id: "42",
+        name: "Women's Cotton Palazzo Pants",
+        image: UNS("1704775989090-452868cbeb75"),
+        price: 299,
+        description: "Flowy wide-leg palazzo pants in soft cotton blend. Pairs beautifully with kurtis, tops, and tunics. Available in solid and printed patterns.",
+        category: "Women's Wear",
+        sizes: ["XS", ...CLOTH_SIZES],
+        isNew: false,
+        isSale: true,
+        originalPrice: 499
+    },
+    // ── More Kids' Basics ─────────────────────────────────────────────────────
+    {
+        _id: "43",
+        name: "Kids Cotton Shorts (Pack of 2)",
+        image: UNS("1627859774205-83c1279a6382"),
+        price: 149,
+        description: "Comfortable elastic-waist cotton shorts for kids. Soft, durable, and easy to wash — available in fun solid colours.",
+        category: "Kids' Collection",
+        sizes: KIDS_SIZES,
+        isNew: false,
+        isSale: false,
+        originalPrice: null
+    },
+    {
+        _id: "44",
+        name: "Kids School Socks (Pack of 3)",
+        image: UNS("1615486364462-ef6363adbc18"),
+        price: 59,
+        description: "Soft cotton school socks in white — ideal for daily school use. Anti-odour, reinforced toe and heel for durability.",
+        category: "Accessories",
+        sizes: ["Free Size"],
+        isNew: false,
+        isSale: false,
+        originalPrice: null
+    },
+    // ── More Ethnic Wear ──────────────────────────────────────────────────────
+    {
+        _id: "45",
+        name: "Women's Ethnic Kurti with Palazzo Set",
+        image: UNS("1667665970124-2273c6ef3489"),
+        price: 599,
+        description: "Coordinated ethnic set — printed kurti paired with matching palazzo pants. Festive yet comfortable for parties and casual outings.",
+        category: "Ethnic Wear",
+        sizes: ["XS", ...CLOTH_SIZES],
+        isNew: true,
+        isSale: false,
+        originalPrice: null
+    },
+    {
+        _id: "46",
+        name: "Men's Cotton Pathani Kurta",
+        image: UNS("1701365676249-9d7ab5022dec"),
+        price: 799,
+        description: "Classic Pathani-style kurta in soft cotton with a chest pocket and button placket. Comfortable and elegant for festive occasions.",
+        category: "Ethnic Wear",
+        sizes: CLOTH_SIZES,
+        isNew: false,
+        isSale: true,
+        originalPrice: 999
     }
 ]
